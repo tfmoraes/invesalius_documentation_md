@@ -120,11 +120,9 @@ gray levels, expressed in Hounsfield (HU), wherein lighter shades
 represent denser matters, and the darker, less dense matter such as skin
 and brain tissues.
 
-Table [1.1](#tab:escala_hounsfield){reference-type="ref"
-reference="tab:escala_hounsfield"} presents some materials and their
+@tbl:escala_hounsfield presents some materials and their
 respective values in Hounsfield Units (HU).
 
-::: {#tab:escala_hounsfield}
   Material         HU        
   ---------- --------------- --
   Air         -1000 or less  
@@ -134,10 +132,7 @@ respective values in Hounsfield Units (HU).
   Contrast         130       
   Bone         400 or more   
 
-  : Escala de Hounsfield
-:::
-
-[]{#tab:escala_hounsfield label="tab:escala_hounsfield"}
+  : Escala de Hounsfield {#tbl:escala_hounsfield}
 
 ### Computed Tomography - Dental (CBCT) {#sec:cbct}
 
@@ -890,8 +885,7 @@ To deactivate the feature, click again on the shortcut icon
 (@fig:window_level_shortcut).
 
 Preset brightness and contrast patterns may be used with InVesalius.
-Table [5.1](#tab:window_level){reference-type="ref"
-reference="tab:window_level"} lists some tissue types with their
+@tbl:window_level lists some tissue types with their
 respective brightness and contrast values. To use the presets, position
 the mouse cursor over an image and **right-click** to open a context
 menu, then select **Window width and level**, and click on the preset
@@ -901,7 +895,6 @@ option according to the tissue type, as shown in
 ![Context menu for brightness and contrast
 selection](images/invesalius_screen/menu_window_and_level_en.png){#fig:window_level}
 
-::: {#tab:window_level}
   Tissue                           Brightness   Contrast
   ------------------------------- ------------ ----------
   Default                             Exam        Exam
@@ -924,15 +917,16 @@ selection](images/invesalius_screen/menu_window_and_level_en.png){#fig:window_le
   Vasculature - Hard                  240          80
   Vasculature - Soft                  680         160
 
-  : Brightness and contrast values for some tissues
-:::
+  : Brightness and contrast values for some tissues {#tbl:window_level}
 
-[]{#tab:window_level label="tab:window_level"}
 
-<figure id="fig:two_window_level">
+<div id="fig:two_window_level">
 
-<figcaption>Different types of brightness and contrast</figcaption>
-</figure>
+  ![Bone](images/invesalius_screen/contraste_osso.png){#fig:contrast_bone width=45%}
+  ![Lung](images/invesalius_screen/contraste_pulmao.png){#fig:contrast_isq width=45%}
+
+Different types of brightness and contrast
+</div>
 
 ## Pseudo color {#sec:pseudo_color}
 
@@ -1127,10 +1121,9 @@ mask will automatically update.
 ![Selection list with some predefined thresholding
 values.](images/invesalius_screen/segmentation_threshold_presets_en.png){#fig:limiar_presets}
 
-Table [6.1](#tab:limiar){reference-type="ref" reference="tab:limiar"}
+@tbl:limiar
 show thresholding values according to some tissues or materials.
 
-::: {#tab:limiar}
   Material                 Initial threshold   Final Threshold
   ----------------------- ------------------- -----------------
   Bone                            226               3021
@@ -1149,12 +1142,10 @@ show thresholding values according to some tissues or materials.
   Spongial Bone (Adult)           148                661
   Spongial Bone (Child)           156                585
 
-  : Predefined thresholding values to some materials
-:::
+  : Predefined thresholding values to some materials {#tbl:limiar}
 
-[]{#tab:limiar label="tab:limiar"}
 
-Table [6.1](#tab:limiar){reference-type="ref" reference="tab:limiar"}
+@tbl:limiar
 indicates images obtained from medical tomographs. The range of gray
 values from images obtained from odontological tomographs are greater
 and non-regular. Thus, it is necessary to use sliding controls
@@ -1363,14 +1354,12 @@ image
 
 Region growing tool is accessed in the menu **Tools**, **Segmentation**,
 **Region growing**
-(figure [6.25](#fig:menu_segmentation_region_growing){reference-type="ref"
-reference="fig:menu_segmentation_region_growing"}). Before segmenting
+(@fig:menu_segmentation_region_growing). Before segmenting
 select if the operation will be in **2D - Actual slice** or **3D - All
 slices**. It is also necessary to select the connectivity: $4$ or $8$ to
 2D or $6$, $18$ or $26$ to 3D. It's also necessary to select the method,
 which may be **Dynamic, Threshold, or Confidence**
-(figure [6.26](#fig:segmentation_region_growing_dinamic){reference-type="ref"
-reference="fig:segmentation_region_growing_dinamic"})
+(@fig:segmentation_region_growing_dinamic)
 
 ![Menu to access the region growing segmentation segmentation
 tool.](images/invesalius_screen/menu_segmentation_region_growing_en.png){#fig:menu_segmentation_region_growing}
@@ -1389,8 +1378,7 @@ selection:
     range deviation are selected. The option **Use WWWL** is default and
     takes into account the image with **window width** and **window
     level** applied not the raw one
-    (figure [6.27](#fig:segmentation_region_growing_dinamic_parameter){reference-type="ref"
-    reference="fig:segmentation_region_growing_dinamic_parameter"}).
+    (@fig:segmentation_region_growing_dinamic_parameter).
 
     ![Dynamic method
     parameters.](images/invesalius_screen/segmentation_region_growing_dinamic_parameter_en.png){#fig:segmentation_region_growing_dinamic_parameter}
@@ -1478,11 +1466,9 @@ Segmentation may leave some unwanted holes. It's recommended to fill
 them because the surface generated from this mask may have some
 inconsistencies. To do this access the menu **Tools**, **Mask**, **Fill
 holes manually**
-(figure [7.5](#fig:menu_mask_manual_fill_holes){reference-type="ref"
-reference="fig:menu_mask_manual_fill_holes"}). A dialog window will be
+(@fig:menu_mask_manual_fill_holes). A dialog window will be
 shown
-(figure [7.6](#fig:mask_manual_fill_holes_window){reference-type="ref"
-reference="fig:mask_manual_fill_holes_window"}) to configure the
+(@fig:mask_manual_fill_holes_window) to configure the
 parameters.
 
 ![Menu to access the tool to fill holes
@@ -2260,10 +2246,8 @@ desired exported format. Finally, click **Save**.
 surface](images/invesalius_screen/export_surface_en.png){#fig:export_data_window}
 
 Files formats avaiable for exportation are listed in
-table [14.1](#tab:files_export_list){reference-type="ref"
-reference="tab:files_export_list"}:
+@tbl:files_export_list:
 
-::: {#tab:files_export_list}
   Format                                 Extension  
   ------------------------------------- ----------- --
   Inventor                                  .iv     
@@ -2275,10 +2259,8 @@ reference="tab:files_export_list"}:
   VTK PolyData                             .vtp     
   Wavefront                                .obj     
 
-  : File formats exported by InVesalius
-:::
+  : File formats exported by InVesalius {#tbl:files_export_list}
 
-[]{#tab:files_export_list label="tab:files_export_list"}
 
 ## Image {#sec:data_export_image}
 
