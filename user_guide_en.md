@@ -59,7 +59,7 @@ output:
 #  \makeatother
 ---
 
-# Introduction
+# Introduction {#sec:introduction}
 
 This manual aims to guide end users in the application of InVesalius
 tools and also presents some concepts to facilitate the use of the
@@ -79,12 +79,12 @@ operate the software, basic computer literacy is essential.
 Understanding medical images can help to form a better understanding of
 the operations.
 
-## Important Concepts
+## Important Concepts {#sec:important_concepts}
 
 Detailed in this section are a list of concepts essential to better
 understand and operate the software.
 
-### DICOM (*Digital Image Communications in Medicine*)
+### DICOM (*Digital Image Communications in Medicine*) {#sec:dicom}
 
 DICOM is a standard the transmission, storage and treatment of medical
 images. The standard encompasses various origins of medical images, such
@@ -97,7 +97,7 @@ information includes, but is not limited to, patient name, mode image
 and the image position in relation to the space (in the case of CT and
 MRI).
 
-### Computed Tomography - Medical
+### Computed Tomography - Medical {#sec:computed_tomography}
 
 Computed tomography indicates the radiodensity of tissues, i.e., the
 average X-ray absorption by the tissues. The radiodensity reading is
@@ -113,7 +113,7 @@ the patient while the stretcher is moved, forming a spiral. This
 generates a large number of images simultaneously, with little emission
 of X-rays.
 
-#### Hounsfield Scale
+#### Hounsfield Scale {#sec:hounsfield}
 
 As mentioned in the previous section, the CT images are generated in
 gray levels, expressed in Hounsfield (HU), wherein lighter shades
@@ -139,7 +139,7 @@ respective values in Hounsfield Units (HU).
 
 []{#tab:escala_hounsfield label="tab:escala_hounsfield"}
 
-### Computed Tomography - Dental (CBCT)
+### Computed Tomography - Dental (CBCT) {#sec:cbct}
 
 The dental CT commonly works with less radiation emission compared to
 medical CT, and therefore makes it possible to view more details of
@@ -166,7 +166,7 @@ images of provincial dental CT scanners is the high presence of speckle
 noise and other forms of noise typically caused by the presence of
 amalgam prosthetics.
 
-### Magnetic Resonance Imaging - MRI
+### Magnetic Resonance Imaging - MRI {#sec:mri}
 
 MRI is an examination performed without the use of ionizing radiation.
 Instead, it use a strong magnetic field to align the atoms of any
@@ -201,11 +201,10 @@ sense, it is possible to use specific tools for neuronavigation and
 still have the possibility of developing features on demand. The
 software for neuronavigation is distributed in an executable version
 compatible with Windows 7, 8 and 10 operating system. The
-chapter [16](#sec:neuronavegador){reference-type="ref"
-reference="sec:neuronavegador"} goes into details of all features of
+@sec:neuronavegador goes into details of all features of
 neuronavigation in InVesalius.
 
-## Resources needed
+## Resources needed {#sec:resources_needed}
 
 InVesalius is designed to run on personal computers, such as desktops
 and notebooks. Currently, it is compatible with the following operating
@@ -229,7 +228,7 @@ memory, it can open about 300 slices with a resolution of 512x512
 pixels. With 4 GB of memory, around 1000 images can be opened
 simultaneously at the same resolution.
 
-### Minimum settings
+### Minimum settings {#sec:minimum_settings}
 
 -   32-bit Operating System
 
@@ -243,7 +242,7 @@ simultaneously at the same resolution.
 
 -   Video resolution of 1024x768 pixels
 
-### Recommended settings
+### Recommended settings {#sec:recommended_settings}
 
 -   64-bit Operating System
 
@@ -257,9 +256,9 @@ simultaneously at the same resolution.
 
 -   Video resolution of 1920x1080 pixels
 
-# Installation
+# Installation {#sec:installation}
 
-## MS-Windows
+## MS-Windows {#sec:ms_windows}
 
 To install InVesalius on MS-Windows, simply run the installer program.
 When a window asking you to confirm the file execution appears, click
@@ -320,7 +319,7 @@ The main program window will then open, as shown below.
 
 ![image](images/invesalius_screen/main_window_without_project_en.png)
 
-## Mac Os X
+## Mac Os X {#sec:macos}
 
 To start the installation on Mac OS X, double-click the installer with
 the left mouse button to begin installation.
@@ -332,13 +331,13 @@ the Applications folder. Both are contained in the installer.
 
 The software is already installed, just access through the menu.
 
-# Image import
+# Image import {#sec:image_import}
 
 InVesalius imports files in DICOM format, including compressed files
 (lossless JPEG), Analyze (Mayo Clinic©), NIfTI, PAR/REC,
 BMP, TIFF, JPEG and PNG formats.
 
-## DICOM
+## DICOM {#sec:image_import_dicom}
 
 Under the File menu, click on Import DICOM or use the shortcut Ctrl+I.
 Additionally, DICOM files can be imported by clicking on the icon shown
@@ -419,7 +418,7 @@ stacked and interpolated).
 ![Reconstruction
 progress](images/invesalius_screen/import_window_progress_en.png){#fig:prog_recons}
 
-## Analyze
+## Analyze {#sec:image_import_analyze}
 
 To import Analyze files, under the **File** menu, click **Import other
 files**, then click in the **Analyze** option as show the
@@ -434,7 +433,7 @@ Select the Analyze file format (**.hdr**) and click on **Open**
 ![Import analyze file
 format](images/invesalius_screen/import_analyze_window_en.png){#fig:analyze_import}
 
-## NIfTI
+## NIfTI {#sec:image_import_nifti}
 
 To import NIfTI files, under the **File** menu, click **Import other
 files** and then click **NIfTI** as shown in
@@ -451,7 +450,7 @@ format as **.hdr**, select **all files(\*.\*)** option.
 ![Importing images in NIfTI
 format.](images/invesalius_screen/import_nifti_window_en.png){#fig:import_nifti_window_pt}
 
-## PAR/REC
+## PAR/REC {#sec:image_import_parrec}
 
 To import PAR/REC file, under the **File** menu, click **Import other
 files**, and then click on **PAR/REC** as shown in
@@ -468,7 +467,7 @@ select **all files(\*.\*)** option.
 ![PAR/REC
 import](images/invesalius_screen/import_parrec_window_en.png){#fig:import_parrec_window_pt}
 
-## TIFF, JPG, BMP, JPEG or PNG (micro-CT)
+## TIFF, JPG, BMP, JPEG or PNG (micro-CT) {#sec:image_import_microct}
 
 TIFF, JPG, BMP, JPEG or PNG file format for microtomography equipment
 (micro-CT or $\mu$CT) or others. InVesalius imports files in these
@@ -568,7 +567,7 @@ multiplanar reconstruction as shown in
 ![Multiplanar reconstruction in
 progress.](images/invesalius_screen/import_window_progress_en.png){#fig:import_bmp_mpr_pt.png}
 
-# Image adjustment
+# Image adjustment {#sec:image_adjustment}
 
 InVesalius cannot guarantee the correct image order; images may contain
 incorrect information, or do not follow the DICOM standard. Therefore,
@@ -601,7 +600,7 @@ image is flipped.
 Example of a right-left flipped image.
 </div>
 
-## Swap axes
+## Swap axes {#sec:swap_axes}
 
 The swap axes tool changes the image orientation, in the case that the
 image has been wrongly imported. To perform this, select the **Tools**
@@ -628,7 +627,7 @@ Top-Bottom.](images/invesalius_screen/invert_axis_axial_en.png){#fig:invert_axis
 ![Images after swap axes - from Anterior-Posterior to
 Top-Bottom.](images/invesalius_screen/invert_axis_axial_inverted_en.png){#fig:invert_axis_axial_inverted}
 
-## Reorient image (Rotate)
+## Reorient image (Rotate) {#sec:reorient_image}
 
 If it is necessary to align the image with a certain point of reference,
 e.g. anatomical marker, use the reorient image tool. To open this tool
@@ -681,9 +680,9 @@ image.](images/invesalius_screen/image_reorient_rotated_en.png){#fig:image_reori
 ![Rotated image after reorientation is
 done.](images/invesalius_screen/image_reorient_rotated_applied_en.png){#fig:image_reorient_rotated_applied}
 
-# Image Manipulation (2D)
+# Image Manipulation (2D) {#sec:image_manipulation}
 
-## Multiplanar Reconstruction
+## Multiplanar Reconstruction {#sec:multiplanar_reconstruction}
 
 When images are imported, InVesalius automatically shows its multiplanar
 reconstruction in the Axial, Sagittal and Coronal orientations, as well
@@ -714,7 +713,7 @@ hidden (@fig:mpr_sem_mask).
 ![Multiplanar reconstruction without segmentation
 mask](images/invesalius_screen/multiplanar_window_en.png){#fig:mpr_sem_mask}
 
-### Axial orientation
+### Axial orientation {#sec:axial_orientation}
 
 The axial orientation consists of cuts made transversally to the region
 of interest, i.e. parallel cuts to the axial plane of the human body. In
@@ -724,7 +723,7 @@ displayed.
 ![Axial
 slice](images/invesalius_screen/axial_en.png){#fig:axial_corte}
 
-### Sagittal orientation
+### Sagittal orientation {#sec:sagittal_orientation}
 
 The sagittal orientation consists of cuts made laterally in relation to
 the region of interest, i.e. parallel cuts to the sagittal plane of the
@@ -734,7 +733,7 @@ human body, which divides it into the left and right portions. In
 ![Sagittal
 slice](images/invesalius_screen/sagital_en.png){#fig:sagital_slice}
 
-### Coronal orientation
+### Coronal orientation {#sec:coronal_orientation}
 
 The coronal orientation is composed of cuts parallel to the coronal
 plane, which divides the human body into ventral and dorsal halves. In
@@ -769,7 +768,7 @@ To deactivate the feature, simply click on the shortcut again
 (@fig:cross_icon). This feature can be used in conjunction
 with the slice editor (which will be discussed later).
 
-## Interpolation
+## Interpolation {#sec:interpolation}
 
 By default the 2D images visualization are interpolated
 (@fig:interp_a). To deactivate this feature, select the
@@ -792,7 +791,7 @@ interpolation](images/invesalius_screen/menu_interpoleted_image_en.png){#fig:men
 Interpolated and non-interpolated image visualization.
 </div>
 
-## Move
+## Move {#sec:move}
 
 To move an image on the screen, use the Move shortcut icon on the
 toolbar (@fig:move_icon). Click on the icon to activate, then with
@@ -805,7 +804,7 @@ images](images/icons/tool_translate_original.png){#fig:move_icon}
 ![Displaced
 image](images/invesalius_screen/axial_pan_en.png){#fig:move_img}
 
-## Rotate
+## Rotate {#sec:rotate}
 
 Images can be rotated by using the Rorate shortcut on the toolbar
 (@fig:rot_icon). To rotate an image, click on the icon and
@@ -818,14 +817,14 @@ images](images/icons/tool_rotate_original.png){#fig:rot_icon}
 ![Rotated
 image](images/invesalius_screen/axial_rotate_en.png){#fig:rotate_all}
 
-## Zoom
+## Zoom {#sec:zoom}
 
 In InVesalius, there are different ways to enlarge an image. You can
 maximize the desired orientation window, apply zoom directly to the
 image, or select the region of the image to enlarge. Each of these
 methods are detailed below.
 
-### Maximizing orientation windows
+### Maximizing orientation windows {#sec:maximizing_orientation_windows}
 
 The main InVesalius window is divided into 4 sub-windows: axial,
 sagittal, coronal and 3D. Each of these can be maximized to occupy the
@@ -837,7 +836,7 @@ previous size, simply click the icon again.
 ![Detail of a sub-window (Note the maximize icon in the upper right
 corner)](images/invesalius_screen/maximize_sagital_mpr.png){#fig:maximize_window}
 
-### Enlarging or shrinking an image
+### Enlarging or shrinking an image {#sec:enlarging_or_shrinking_image}
 
 To enlarge or shrink an image, click on the zoom shortcut icon in the
 toolbar (@fig:zoom_icon). Hold down the **left** mouse button on the
@@ -846,7 +845,7 @@ image and **drag** the mouse **up** to enlarge or **down** to shrink.
 ![Zoom
 shortcut](images/icons/tool_zoom_original.png){#fig:zoom_icon}
 
-### Enlarging an image area
+### Enlarging an image area {#sec:enlarging_image_area}
 
 To enlarging a certain image area, click on the \"Zoom based on
 selection\" icon in the toolbar
@@ -935,7 +934,7 @@ selection](images/invesalius_screen/menu_window_and_level_en.png){#fig:window_le
 <figcaption>Different types of brightness and contrast</figcaption>
 </figure>
 
-## Pseudo color
+## Pseudo color {#sec:pseudo_color}
 
 Another feature to improve the visualization of the images is the pseudo
 color. This replaces gray levels by color, or by inverted gray levels.
@@ -969,7 +968,7 @@ options available.
 Some different types of pseudo-color
 </div>
 
-## Projection type
+## Projection type {#sec:projection_type}
 
 It is possible to change the projection type of the 2D images, in
 addition to the normal mode, InVesalius has six types of projections
@@ -982,7 +981,7 @@ projection option, as shown in the
 ![Projection Type
 menu](images/invesalius_screen/menu_projection_en.png){#fig:menu_proj}
 
-### Normal
+### Normal {#sec:projection_type_normal}
 
 Normal mode is the default view, showing the unmodified image as it was
 when acquired or customized previously with either brightness and
@@ -1010,7 +1009,7 @@ the bottom of each orientation image.
 ![Selection the amount of images that composes the MaxIP or
 MIP](images/invesalius_screen/multiplanar_window_maxip_number_en.png){#fig:proj_maxip_qtd}
 
-### MinIP
+### MinIP {#sec:min_ip}
 
 Unlike MaxIP, MinIP (*Minimum Intensity Projection*) selects only the
 voxels that have minimal intensity among those visited, as shown in
@@ -1021,7 +1020,7 @@ projection is made at the bottom of each orientation image as shown in
 ![MinIP
 projection](images/invesalius_screen/multiplanar_window_minip_en.png){#fig:proj_minIP}
 
-### MeanIP
+### MeanIP {#sec:mean_ip}
 
 The MeanIP (*Mean Intensity Projection*) technique which is shown in the
 @fig:proj_meanIP composes the projection by averaging voxels
@@ -1055,18 +1054,17 @@ in the lower corner of the screen.
 ![Inverted order MIDA
 projection](images/invesalius_screen/multiplanar_window_mida_inverted_en.png){#fig:proj_MIDA_inv}
 
-### Contour MaxIP
+### Contour MaxIP {#sec:contour_maxip}
 
 The Contour MaxIP function consists of visualizing contours present in
 the projection generated with MaxIP
-technique([5.9.2](#sec:max_ip){reference-type="ref"
-reference="sec:max_ip"}). An example is presented in
+technique(@sec:max_ip). An example is presented in
 @fig:proj_contorno_maxip.
 
 ![Contour MaxIP
 projection](images/invesalius_screen/multiplanar_window_contour_maxip_en.png){#fig:proj_contorno_maxip}
 
-### Contour MIDA
+### Contour MIDA {#sec:contour_mida}
 
 The Contour MIDA function consists of visualizing contours present in
 the projection generated with the MIDA
@@ -1078,12 +1076,12 @@ volume is visited, as shown in
 ![Contour MIDA
 projection](images/invesalius_screen/multiplanar_window_contour_mida_en.png){#fig:proj_contorno_mida}
 
-# Segmentation
+# Segmentation {#sec:segmentation}
 
 To select a certain type of tissue from an image it is used the
 segmentation feature at InVesalius.
 
-## Threshold
+## Threshold {#sec:threshold}
 
 When using the thresholding segmentation technique, only the pixels
 whose intensity is inside the threshold range defined by the user are
@@ -1197,7 +1195,7 @@ visualization window of InVesalius
 ![3D
 surface.](images/invesalius_screen/surface_from_threshold.png){#fig:surface}
 
-## Manual segmentation (Image edition)
+## Manual segmentation (Image edition) {#sec:manual_segmentation}
 
 Thresholding segmentation may not be efficient in some cases since it is
 applied to the whole image. Manual segmentation may be used to segment
@@ -1284,7 +1282,7 @@ aware smoothing (smoother)**.
 ![Surface creation
 methods](images/invesalius_screen/surface_generation_dialog_en.png){#fig:new_surface_edited}
 
-## Watershed
+## Watershed {#sec:watershed}
 
 In watershed segmentation the user demarcates objects and background
 detail. This method treats the image as watershed (hence the name) in
@@ -1361,7 +1359,7 @@ slice.](images/invesalius_screen/segmentation_watershed_axial.png){#fig:watershe
 image
 (3D).](images/invesalius_screen/segmentation_watershed_multiplanar_3d_pt.png){#fig:watershed_3d}
 
-## Region growing
+## Region growing {#sec:region_growing}
 
 Region growing tool is accessed in the menu **Tools**, **Segmentation**,
 **Region growing**
@@ -1418,9 +1416,9 @@ selection:
     ![Confidence
     parameter.](images/invesalius_screen/segmentation_region_growing_confidence_parameter_en.png){#fig:segmentation_region_growing_confidence_parameter}
 
-# Mask
+# Mask {#sec:mask}
 
-## Boolean operations
+## Boolean operations {#sec:boolean_operations}
 
 After segmenting, some boolean operations can be performed between
 masks. The boolean operations supported by InVesalius are:
@@ -1474,7 +1472,7 @@ Watershed markers. This tool is located on the **Tools** menu. Select
 ![Mask
 cleaning](images/invesalius_screen/mask_clean_menu_en.png){#fig:limpeza_mascara}
 
-## Fill holes manually
+## Fill holes manually {#sec:fill_holes_manually}
 
 Segmentation may leave some unwanted holes. It's recommended to fill
 them because the surface generated from this mask may have some
@@ -1512,7 +1510,7 @@ the dialog to deactivate this tool.
 Example of mask with holes filled.
 </div>
 
-## Fill holes automatically
+## Fill holes automatically {#sec:fill_holes_automatically}
 
 To open this tool go to the **Tools** menu, select **Mask** then **Fill
 holes automatically**
@@ -1537,7 +1535,7 @@ After setting the parameters click **Apply**. If the result is not
 suitable set another hole size value or connectivity. Click **Close** to
 close this tool.
 
-## Remove parts
+## Remove parts {#sec:remove_parts}
 
 After generating a surface, it is recommended to remove the unwanted
 disconnected parts from a mask. This way the surface generation will use
@@ -1571,7 +1569,7 @@ tool.
 Example of region remove from a mask.
 </div>
 
-## Select parts
+## Select parts {#sec:select_parts}
 
 To open the Select parts tool, access the **Tools** menu, select
 **Mask** then **Select parts**
@@ -1601,7 +1599,7 @@ tool.](images/invesalius_screen/mask_select_part_en.png){#fig:mask_select_part}
 Example of mask region selection.
 </div>
 
-## Crop
+## Crop {#sec:crop}
 
 The crop tool allows users to select and use a specific section of image
 of interest. This may reduce the amount of information needed to be
@@ -1630,7 +1628,7 @@ controls to configure a 3D surface
 ![3D surface
 configuration.](images/invesalius_screen/surface_config_panel_en.png){#fig:3d_surface_managment}
 
-## Creating 3D surfaces
+## Creating 3D surfaces {#sec:create_3d_surfaces}
 
 News surfaces can be created using an already segmented mask. To do so,
 on the left panel under **3. Configure 3D surface**, click on the button
@@ -1713,7 +1711,7 @@ surface.
 Surface generated by each method.
 </div>
 
-## Transparency
+## Transparency {#sec:transparency}
 
 The Transparency function allows for the displaying of a surface
 transparently. To do so, select the desired surface from the list of
@@ -1737,7 +1735,7 @@ internal surface in yellow.
 ![Surface with
 transparency.](images/invesalius_screen/transparency_2.png){#fig:model_transparency}
 
-## Color
+## Color {#sec:color}
 
 Surface colors can be altered by selecting the surface
 (@fig:select_surface), and clicking on the colored button on
@@ -1755,7 +1753,7 @@ click on **OK**.
 ![Color
 dialog.](images/invesalius_screen/surface_select_color_windows_so_en.png){#fig:button_select_color}
 
-## Splitting disconnected surfaces
+## Splitting disconnected surfaces {#sec:splitting_disconnected}
 
 To split disconnected surfaces, select **3. Configure 3D surface**,
 **Advanced options**
@@ -1770,7 +1768,7 @@ The advanced options panel will be displayed
 ![Advanced options
 panel.](images/invesalius_screen/surface_split_en.png){#fig:advanced_tools_expanded}
 
-### Select largest surface
+### Select largest surface {#sec:select_largest_surface}
 
 The option **Select largest surface** selects, automatically, only
 surface with the greater volume. Click on the button illustrated in
@@ -1794,7 +1792,7 @@ disconnected region separated.
 ![Largest disconnected region
 separated.](images/invesalius_screen/surface_extract_most_region2.jpg){#fig:extract_most_region2}
 
-### Select regions of interest
+### Select regions of interest {#sec:select_regions}
 
 Another selection option is Select regions of interest. To do this
 operation click on the button illustrated in
@@ -1814,7 +1812,7 @@ support.
 ![Example of selected regions of
 interest](images/invesalius_screen/surface_extract_most_region3.jpg){#fig:extract_most_region3}
 
-### Split all disconnected surfaces
+### Split all disconnected surfaces {#sec:split_all_disconnected_surfaces}
 
 Disconnected surface regions can also be split automatically. To do
 this, click on the button illustrated in
@@ -1828,13 +1826,13 @@ surface.](images/icons/connectivity_split_all.png){#fig:connectivity_split_all}
 ![Example of split all disconnected regions
 surface.](images/invesalius_screen/surface_extract_most_region_4.jpg){#fig:extrac_most_region_4}
 
-# Measures
+# Measures {#sec:measures}
 
 InVesalius has linear and angular measurements in 2D (axial, coronal and
 sagittal planes) and 3D (surfaces). It is thus possible to take
 measurements of volume and area on surfaces.
 
-## Linear Measurement
+## Linear Measurement {#sec:linear_measurement}
 
 To perform linear measurements, activate the feature by clicking on the
 shortcut shown below, located on the toolbar
@@ -1864,7 +1862,7 @@ surface](images/invesalius_screen/3d_linear.jpg){#fig:3d_linear}
 
 **Note: The linear measurement is given in millimeters (mm).**
 
-## Angular Measurement
+## Angular Measurement {#sec:angular_measurement}
 
 An angular measurement in 2D on a surface (3D) can be done by clicking
 on the shortcut shown in
@@ -1897,7 +1895,7 @@ surface](images/invesalius_screen/angular_superficie.jpg){#fig:axial_superficie}
 
 **Note: Angular measurement is shown in degrees ($^{\circ}$)**
 
-## Volumetric Measurement
+## Volumetric Measurement {#sec:volumetric_measurement}
 
 Volume and area measurements are made automatically when you create a
 new surface. These are displayed in the **Surfaces 3D** tab in the
@@ -1911,7 +1909,7 @@ measurements](images/invesalius_screen/painel_volumetric_measures_en.png){#fig:v
 **Note: Volume measurement is given in cubic millimeter ($mm^3$),
 already the one of area in square millimeter ($mm^2$)**
 
-# Data management
+# Data management {#sec:data_management}
 
 We have previously shown how to manipulate surfaces, masks for
 segmentation and measurements. We can also show or hide, and create or
@@ -1957,13 +1955,13 @@ shortcut shown in
 ![Duplicate
 data](images/icons/data_duplicate.png){#fig:duplicate_data}
 
-## Masks
+## Masks {#sec:masks}
 
 In the Name column, the mask's color and name are shown. The
 **Threshold** column shows the value range used to create the mask.
 @fig:volumetric_data shows an example.
 
-## 3D Surface
+## 3D Surface {#sec:3d_surfaces}
 
 In the **Name** column, the surface's color and name are shown. The
 **Volume** column shows the total surface volume. Finally, the
@@ -1974,7 +1972,7 @@ surface visualization.
 ![Surface
 manager](images/invesalius_screen/painel_volumetric_measures_en.png){#fig:surface_manager}
 
-### Import surface
+### Import surface {#sec:import_surface}
 
 We can also import STL, OBJ, PLY or VTP (VTK Polydata File Format) files
 into an active InVesalius project. To do so, click in the icon shown in
@@ -1987,7 +1985,7 @@ file, (@fig:import_surface) and click Open.
 ![Window to import
 surface](images/invesalius_screen/import_surface_en.png){#fig:import_surface}
 
-## Measurements
+## Measurements {#sec:measurements}
 
 The tab Measurements shows the following information. **Name** indicates
 the color and measurement name. **Local** indicates where the
@@ -1999,7 +1997,7 @@ measurement was taken (image axial, coronal, sagital or 3D), and
 ![Data
 management](images/invesalius_screen/painel_measures_manager_en.png){#fig:manager_mensuares}
 
-# Simultaneous viewing of images and surfaces
+# Simultaneous viewing of images and surfaces {#sec:simultaneous_viewing_images_surface}
 
 Images and surfaces can be viewed simultaneously by **left-clicking** on
 the shortcut
@@ -2062,7 +2060,7 @@ option.
 ![Shortcut to volume
 visualization](images/icons/volume_raycasting_origina.png){#fig:volume_raycasting_origina}
 
-## Viewing Standards
+## Viewing Standards {#sec:viewing_standards}
 
 There are several predefined viewing patterns. Some examples are
 illustrated in the following figures.
@@ -2077,7 +2075,7 @@ Medium](images/invesalius_screen/contraste_medio.jpg){#fig:contraste_medio}
 
 ![MIP](images/invesalius_screen/MIP.jpg){#fig:MIP}
 
-## Standard Customization
+## Standard Customization {#sec:standard_customization}
 
 Some patterns can be personalized (and customized).
 @fig:customize_1 is exhibiting a pattern and some graphical
@@ -2119,7 +2117,7 @@ the software is opened.
 ![Window to save name of
 pattern.](images/invesalius_screen/save_window_preset_en.png){#fig:save_window_preset}
 
-## Standard Customization with Brightness and Contrast
+## Standard Customization with Brightness and Contrast {#sec:brightness_contrast}
 
 You can customize a pattern without using the graphical control settings
 presented in the previous section. This is done through the **brightness
@@ -2134,7 +2132,7 @@ Enable the control by dragging the mouse, with the left button pressed
 on the volume window. This will change the values of the window width
 and window level. The procedure is the same as with slices applied to 2D
 images, which can be seen in
-section [5.7](#sec:ww_wl){reference-type="ref" reference="sec:ww_wl"}.
+@sec:ww_wl.
 Dragging the mouse in a horizontal direction changes the window level
 value; drag left to decrease and right to increase. Dragging the mouse
 vertically changes the value of window width; drag down to decrease and
@@ -2157,7 +2155,7 @@ with the left button pressed.). See
 Tissue Addition
 </div>
 
-## Cut
+## Cut {#sec:cut}
 
 In volume rendering, the cut function is used to view a cross-section of
 a region. With a volume pattern selected, click **Tools**, and then
@@ -2179,7 +2177,7 @@ plane](images/invesalius_screen/cutted_image.png){#fig:cutted_image}
 When finished using the function, click **Tools** and again click **Cut
 plane** (@fig:cutted_image).
 
-# Stereoscopic Visualization
+# Stereoscopic Visualization {#sec:stereoscopic_visualization}
 
 InVesalius supports stereoscopic visualization of 3D models. First a
 surface (see chapter [8](#cap_surface){reference-type="ref"
@@ -2227,7 +2225,7 @@ Example of different methods of stereoscopic applied on a
 surface.
 </div>
 
-# Data export
+# Data export {#sec:data_export}
 
 InVesalius can export data in different formats, such as OBJ, STL and
 others, to be used in other software.
@@ -2240,7 +2238,7 @@ with the **left** mouse button to expand the item.
 ![Menu to export
 data](images/invesalius_screen/painel_data_export_en.png){#fig:data_export}
 
-## Surface
+## Surface {#sec:data_export_surface}
 
 To export a surface, select it from the data menu as shown in
 @fig:data_export_selection.
@@ -2282,7 +2280,7 @@ reference="tab:files_export_list"}:
 
 []{#tab:files_export_list label="tab:files_export_list"}
 
-## Image
+## Image {#sec:data_export_image}
 
 Images exhibited in any orientation (axial, coronal, sagittal and 3D)
 can be exported. To do so, **left-click** on the shortcut shown in
@@ -2299,12 +2297,12 @@ then click **Save**.
 ![Window to export
 images](images/invesalius_screen/export_bmp_en.png){#fig:save_image_window}
 
-# Customization
+# Customization {#sec:customization}
 
 Some customization options are available for InVesalius users. They are
 shown as follows.
 
-## Tools menu
+## Tools menu {#sec:tools_menu}
 
 To hide/show the side tools menu, click the button shown in
 @fig:layout_full_original.
@@ -2319,7 +2317,7 @@ expanded, as shown in
 ![Side menu
 hidden](images/invesalius_screen/window_mpr_not_painels_en.png){#fig:closed_tool_menu}
 
-## Automatic positioning of volume/surface
+## Automatic positioning of volume/surface {#sec:automatic_pos_vol}
 
 To automatically set the visualization position of a volume or surface,
 click on the icon shown in
@@ -2330,7 +2328,7 @@ visualization.
 ![Options for visualization
 positioning](images/invesalius_screen/3d_automatic_position_en.png){#fig:3d_automatic_position}
 
-## Background color of volume/surface window
+## Background color of volume/surface window {#sec:background_color}
 
 To change the background color of the volume/surface window, click on
 the shortcut shown in
@@ -2353,7 +2351,7 @@ the background color changed.
 ![Background color
 modified](images/invesalius_screen/3d_background_changed.png){#fig:background_color}
 
-## Show/hide text in 2D windows
+## Show/hide text in 2D windows {#sec:show_hide_text}
 
 To show or hide text in 2D image windows, click on the shortcut
 illustrated in @fig:text on the toolbar.
@@ -2373,8 +2371,7 @@ disabled](images/invesalius_screen/axial_no_tex_en.png){#fig:text_off}
 # Neuronavegation {#sec:neuronavegador}
 
 An introduction to neuronavigation theory was presented in
-section [1.1.5](#sec:neuronavegador_intro){reference-type="ref"
-reference="sec:neuronavegador_intro"}. Please read that section before
+@sec:neuronavegador_intro. Please read that section before
 using the features detailed below.
 
 To enable the InVesalius neuronavigation mode, select the **Mode** tab
@@ -2389,7 +2386,7 @@ mode.](images/invesalius_screen/nav_menu_en.png){#fig:nav_menu_en}
 ![Tab for navigation
 system.](images/invesalius_screen/nav_painel_en.png){#fig:nav_painel_en}
 
-## Spatial trackers and reference mode
+## Spatial trackers and reference mode {#sec:spatial_trackers}
 
 Currently, InVesalius Navigator supports four spatial tracking devices
 from two manufacturers: the MicronTracker from ClaroNav (Toronto,
@@ -2416,8 +2413,7 @@ There are two methods to perform the navigation: static and dynamic
 (@fig:nav_menu_ref). Static mode uses just one spatial
 tracker probe. In this mode, the subject's head must stay motionless
 after registration (for more info about coregistration see
-Section [16.2](#sec:corregistro){reference-type="ref"
-reference="sec:corregistro"} probes: a reference probe must head (e.g.
+@sec:corregistro) probes: a reference probe must head (e.g.
 forehead). during the probe will detect and correct any 16.2). Dynamic
 mode uses multiple be attached to a static part of the neuronavigation
 process; the reference movements from the head.
@@ -2431,8 +2427,7 @@ The aim of coregistration is to transform a coordinate given in the
 tracking device space to a coordinate in the virtual space (image). To
 perform coregistration, the user must use the function **Correspondence
 between orientations axial, sagittal and coronal** (see
-section [5.2](#sec:corresp_all_orient){reference-type="ref"
-reference="sec:corresp_all_orient"}) and select three anatomical
+@sec:corresp_all_orient) and select three anatomical
 fiducials in the image. Then, collect the same three fiducials with the
 spatial tracker. The most common anatomical fiducials are the nasion and
 both tragus (ears).
@@ -2460,7 +2455,7 @@ The buttons acronyms represent:
 ![Selected fiducial markers represented as green
 spheres.](images/invesalius_screen/nav_balls_in_head.png){#fig:nav_balls_in_head}
 
-## Fiducial registration error and navigation
+## Fiducial registration error and navigation {#sec:fiducial_registration}
 
 After all fiducials are selected in both spaces (tracker and image),
 press the **Navigate** button to start the neuronavigation process. To
@@ -2483,7 +2478,7 @@ navigation.](images/invesalius_screen/nav_fre_error_en.png){#fig:nav_fre_error}
 ![Navigation button and low FRE suitable for
 navigation.](images/invesalius_screen/nav_fre_ok_en.png){#fig:nav_fre_ok}
 
-## Markers
+## Markers {#sec:markers}
 
 During navigation, it is possible to create sphere markers in the 3D
 space. To do so, select the **Extra tools** tools tab
@@ -2526,7 +2521,7 @@ press **Remove**. It is also possible to remove all markers, with the
 button **Remove all markers**. All markers can be hidden or shown in the
 volume using the **show/hide button**.
 
-## External trigger checkbox
+## External trigger checkbox {#sec:external_trigger_checkbox}
 
 Markers can also be created by using an external trigger. To activate
 this feature, press the checkbox **External trigger** before starting
@@ -2536,7 +2531,7 @@ the user requires. Communication with an external device requires serial
 port COM1. If this port receives any RS-232 signal at a 9600 *baud rate*
 it will create a marker in the current red cross position.
 
-## Camera volume checkbox
+## Camera volume checkbox {#sec:camera_volume_checkbox}
 
 The volume camera positioning is updated automatically, both by the red
 cross and the spatial tracker probe position. The user can disable this
