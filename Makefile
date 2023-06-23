@@ -29,10 +29,10 @@ PANDOC_BOOK_OPTIONS=--top-level-division=chapter --toc --toc-depth=2
 
 #  Pattern matching rules
 
-%.html: $(MD_FILES) Makefile
+%.html: %.md Makefile
 	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) -o $@ $<
 
-%.pdf: $(MD_FILES) Makefile
+%.pdf: %.md Makefile
 	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_PDF_OPTIONS) -o $@ $<
 
 
